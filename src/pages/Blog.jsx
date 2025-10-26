@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Stars from "../components/Stars";
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const blogPosts = [
     {
       title: "Luna Piena in Scorpione: Tempo di Trasformazione",
